@@ -13,3 +13,29 @@
 ![image](https://github.com/748811693aB/ffp_official_trained_result/assets/102968155/4a973fa3-6dfa-44ea-a27c-34b70dc191ad)
 ![image](https://github.com/748811693aB/ffp_official_trained_result/assets/102968155/600c1bbc-9db0-4634-91f9-4e07b3c086df)
 ![image](https://github.com/748811693aB/ffp_official_trained_result/assets/102968155/e3a0b7ec-611c-4c26-99ad-5af2f50894b5)
+
+## 2023-7-31测试
+```
+File "utils/eval.py", line 131:
+@numba.jit(nopython=True, parallel=True)
+def d3_box_overlap_kernel(boxes, qboxes, rinc, criterion=-1):
+^
+
+  state.func_ir.loc))
+Car AP@0.70, 0.70, 0.70:
+bbox AP:90.65, 87.32, 82.42
+bev  AP:89.80, 81.65, 78.17
+3d   AP:81.91, 70.83, 65.85
+aos  AP:90.01, 85.01, 79.67
+Car AP@0.70, 0.50, 0.50:
+bbox AP:90.65, 87.32, 82.42
+bev  AP:90.89, 90.68, 88.17
+3d   AP:90.88, 90.56, 87.58
+aos  AP:90.01, 85.01, 79.67
+
+Car coco AP@0.50:0.05:0.95:
+bbox AP:70.40, 66.61, 63.92
+bev  AP:69.32, 64.91, 61.22
+3d   AP:58.25, 53.24, 50.03
+aos  AP:69.93, 64.96, 61.85
+```
